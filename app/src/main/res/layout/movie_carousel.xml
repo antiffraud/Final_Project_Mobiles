@@ -1,0 +1,116 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="280dp"
+    android:layout_height="160dp"
+    android:layout_margin="8dp">
+
+    <!-- 1. Poster -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardPoster"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/ivPoster"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:contentDescription="Poster" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- 2. Gradient Overlay (transparan gelap di bawah teks) -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_overlay"
+        android:alpha="0.6"/>
+
+    <!-- 3. Info Film (diletakkan setelah gambar agar teks berada di atas gambar) -->
+    <LinearLayout
+        android:id="@+id/infoOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:gravity="bottom"
+        android:layout_gravity="bottom|start">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardians of the Galaxy Vol.3"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:ellipsize="end" />
+
+        <TextView
+            android:id="@+id/tvGenre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Action • Sci-Fi • Adventure"
+            android:textColor="#B6B6B6"
+            android:textSize="10sp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:paddingTop="2dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="4dp">
+
+            <TextView
+                android:id="@+id/tvYear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2023"
+                style="@style/TagLabel" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" • "
+                android:textColor="#CCCCCC" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/tvRating"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="PG-13"-->
+<!--                style="@style/TagLabel" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text=" • "-->
+<!--                android:textColor="#000000" />-->
+
+            <TextView
+                android:id="@+id/tvDuration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2h 32m"
+                style="@style/TagLabel" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 4. Tombol Watchlist (tetap berada di atas gambar) -->
+    <TextView
+        android:id="@+id/btnWatchlist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add to Watchlist"
+        android:textSize="8sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_button_add_watchlist"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="6dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="12dp" />
+</FrameLayout>

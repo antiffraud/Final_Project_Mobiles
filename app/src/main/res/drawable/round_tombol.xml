@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- rounded_border.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FF0000"/>
+    <corners android:radius="30dp"/>
+    <stroke android:color="#E9E9E9" android:width="2dp"/>
+</shape>

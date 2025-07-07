@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/main_color"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:background="@drawable/btn_checkout">
+
+        <ImageView
+            android:id="@+id/cartMovieImage"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@drawable/kelazz" />
+
+        <TextView
+            android:id="@+id/cartMovieTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="Judul Film"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/removeFromCart"
+            app:layout_constraintStart_toEndOf="@+id/cartMovieImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/cartMovieYear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:text="2024"
+            android:textColor="#B3FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/calendarImg"
+            app:layout_constraintTop_toBottomOf="@+id/cartMovieTitle" />
+
+        <ImageButton
+            android:id="@+id/removeFromCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:background="@android:color/transparent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/movieTimeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:text="116 Minutes"
+            android:textColor="#B3FFFFFF"
+            app:layout_constraintStart_toEndOf="@+id/timeImg"
+            app:layout_constraintTop_toBottomOf="@+id/cartMovieTitle" />
+
+        <TextView
+            android:id="@+id/movieSummary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="20dp"
+            android:text="John was so professional"
+            android:maxLines="3"
+            android:ellipsize="end"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cartMovieImage"
+            app:layout_constraintTop_toBottomOf="@+id/cartMovieYear" />
+
+        <ImageView
+            android:id="@+id/calendarImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/cartMovieImage"
+            app:layout_constraintTop_toBottomOf="@+id/cartMovieTitle"
+            app:srcCompat="@drawable/ic_calender" />
+
+        <ImageView
+            android:id="@+id/timeImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="4dp"
+            app:layout_constraintStart_toEndOf="@+id/cartMovieYear"
+            app:layout_constraintTop_toBottomOf="@+id/cartMovieTitle"
+            app:srcCompat="@drawable/ic_clock" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

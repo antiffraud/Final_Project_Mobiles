@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Theme utama kamu -->
+    <style name="Theme.MyApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- konfigurasi theme utama -->
+    </style>
+
+    <!-- Tambahan style untuk carousel tag -->
+    <style name="TagLabel">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#CCCCCC</item>
+        <item name="android:paddingEnd">6dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

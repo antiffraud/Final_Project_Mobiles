@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="dark_blue">#252836 </color>
+    <color name="main_color">#1F1D2B</color>
+    <color name="yellow">#FFC107 </color>
+    <color name="orange">#FF7427</color>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="green_500">#4CAF50</color>
+    <color name="red_500">#F44336</color>
+    <color name="primary_500">#6200EE</color>
+    <color name="red">#f96d6d</color>
+    <color name="unguuu">#1F1D2B</color>
+    <color name="ungu_lain">#B48CF3</color>
+    <color name="button_ungu">#29215B</color>
+    <color name="category_text_active">#360640</color>     <!-- Ungu -->
+    <color name="category_text_inactive">#BDBDBD</color>   <!-- Abu terang -->
+</resources>
